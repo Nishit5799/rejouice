@@ -151,3 +151,36 @@ tl.from("#page1-content h1 span", {
   stagger: 0.1,
   // duration: 0.5,
 });
+// create
+let mm = gsap.matchMedia();
+let tl2 = gsap.timeline();
+
+// add a media query. When it matches, the associated function will run
+mm.add("(max-width: 600px)", () => {
+  tl2.from("#loader h3", {
+    x: 600,
+    opacity: 0,
+    duration: 0.5,
+    stagger: 0.1,
+  });
+  // this setup code only runs when viewport is at least 800px wide
+  tl2.to("#loader h3", {
+    opacity: 0,
+    x: 500,
+    duration: 1,
+    stagger: 0.1,
+  });
+  tl2.to("#loader", {
+    opacity: 0,
+    display: "none",
+  });
+  tl2.from("#page1-content h1 span", {
+    y: 50,
+    opacity: 0,
+    stagger: 0.1,
+    // duration: 0.5,
+  });
+});
+
+// later, if we need to revert all the animations/ScrollTriggers...
+mm.revert();

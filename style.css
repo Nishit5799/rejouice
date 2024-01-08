@@ -290,7 +290,7 @@ nav h4:hover::after {
 }
 #page4 video {
   position: absolute;
-  height: 100%;
+  height: 70%;
 }
 #page4 svg {
   position: absolute;
@@ -582,8 +582,7 @@ nav h4:hover::after {
     gap: 5px;
   }
   #loader h3 {
-    height: 50%;
-    font-size: 7vw;
+    font-size: 6vw;
     font-weight: 100;
   }
 }
