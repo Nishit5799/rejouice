@@ -579,10 +579,11 @@ nav h4:hover::after {
     align-items: center;
     justify-content: center;
     color: #fff;
-    gap: 10px;
+    gap: 5px;
   }
   #loader h3 {
-    font-size: 5vw;
+    height: 50%;
+    font-size: 7vw;
     font-weight: 100;
   }
 }
