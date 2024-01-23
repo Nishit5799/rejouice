@@ -489,7 +489,7 @@ ul {
     display: none;
   }
   #page1 {
-    height: 40vh;
+    height: 57vh;
   }
   #page1 video {
     position: absolute;
@@ -727,7 +727,7 @@ ul {
     top: 0;
     left: 0;
     width: 100%;
-    /* height: 100vh; */
+    height: 30vh;
     background-color: rgba(0, 0, 0, 0.8);
     z-index: 1000;
   }
