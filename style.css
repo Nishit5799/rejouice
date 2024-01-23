@@ -585,4 +585,154 @@ nav h4:hover::after {
     font-size: 6vw;
     font-weight: 100;
   }
+  footer {
+    padding: 40px 40px;
+    width: 100%;
+  }
+
+  .footer-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    /* flex-wrap: wrap; */
+  }
+
+  .footer-section {
+    display: flex;
+    margin-right: 20px;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.5vw;
+    /* gap: 1.2vw; */
+  }
+  #menu-container {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    /* height: 100vh; */
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 1000;
+  }
+  #menu-content {
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+  }
+}
+
+footer {
+  background-color: #222;
+  color: #fff;
+  padding: 20px 50px;
+  width: 100%;
+  height: 20%;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-around;
+  /* flex-wrap: wrap; */
+}
+
+.footer-section {
+  display: flex;
+  margin-right: 20px;
+  justify-content: center;
+  align-items: center;
+  gap: 1.2vw;
+}
+
+h4 {
+  color: #fff;
+}
+
+p {
+  margin: 8px 0;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+.social-links {
+  display: flex;
+}
+
+.social-icon {
+  margin-right: 10px;
+  text-decoration: none;
+  color: #fff;
+}
+.quick-links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.2vw;
+}
+.quick-links li {
+  margin-bottom: 5px;
+  display: flex;
+  gap: 2;
+}
+.quick-links li a {
+  color: white;
+  text-decoration: none;
+}
+.quick-links li a:hover {
+  color: rgb(179, 174, 174);
+}
+.footer-bottom {
+  margin-top: 20px;
+  text-align: center;
+}
+
+#menu-container {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 30%;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 1000;
+}
+
+#menu-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #fff;
+}
+
+.menu-links {
+  list-style: none;
+  padding: 0;
+}
+
+.menu-links li {
+  margin-bottom: 15px;
+}
+
+.menu-links a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 18px;
+}
+
+#menu-toggle {
+  cursor: pointer;
+  color: #fff;
+  font-size: 18px;
+}
+
+#menu-toggle:hover {
+  text-decoration: underline;
 }

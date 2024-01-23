@@ -184,3 +184,31 @@ mm.add("(max-width: 600px)", () => {
 
 // later, if we need to revert all the animations/ScrollTriggers...
 mm.revert();
+
+document.addEventListener('DOMContentLoaded', function () {
+  const menuContainer = document.getElementById('menu-container');
+  const menuContent = document.getElementById('menu-content');
+  const menuToggle = document.getElementById('menu-toggle');
+
+  menuContainer.style.display = 'none';
+
+  menuToggle.addEventListener('click', function (event) {
+    event.stopPropagation(); // Prevent the click event from propagating to document
+    menuContainer.style.display = menuContainer.style.display === 'none' ? 'block' : 'none';
+  });
+
+  // Close the menu if a menu link is clicked
+  const menuLinks = document.querySelectorAll('.menu-links a');
+  menuLinks.forEach(function (link) {
+    link.addEventListener('click', function () {
+      menuContainer.style.display = 'none';
+    });
+  });
+
+  // Close the menu if clicked anywhere outside of it
+  document.addEventListener('click', function (event) {
+    if (!menuContent.contains(event.target) && !menuToggle.contains(event.target)) {
+      menuContainer.style.display = 'none';
+    }
+  });
+});
