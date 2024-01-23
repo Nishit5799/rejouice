@@ -551,7 +551,7 @@ ul {
     display: inline-block;
   }
   #page2 {
-    min-height: 50vh;
+    min-height: 30vh;
     width: 100%;
     /* background-color: red; */
     padding: 3vw 3vw;
@@ -684,6 +684,12 @@ ul {
   #page4 h1 {
     font-size: 6vw;
   }
+  #page5 {
+    height: 80vh;
+    width: 100%;
+    padding: 4vw 0;
+  }
+
   #loader {
     height: 100%;
     width: 100%;
@@ -733,7 +739,7 @@ ul {
   }
   #menu-content {
     position: absolute;
-    top: 10%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
